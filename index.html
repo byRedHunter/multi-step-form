@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Multi-Step Form || byRedHunter</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/main.css" />
+	</head>
+	<body>
+		<main class="main-register">
+			<div class="container">
+				<div class="register">
+					<h2 class="margin-0 register-title">Quiero Unirme</h2>
+
+					<div class="register-header">
+						<div class="register-header-item">
+							<h3 class="margin-0">General</h3>
+							<div class="point">
+								<span>1</span>
+								<i class="fas fa-check"></i>
+							</div>
+						</div>
+
+						<div class="register-header-item">
+							<h3 class="margin-0">Perfil</h3>
+							<div class="point">
+								<span>2</span>
+								<i class="fas fa-check"></i>
+							</div>
+						</div>
+
+						<div class="register-header-item">
+							<h3 class="margin-0">Usuario</h3>
+							<div class="point">
+								<span>3</span>
+								<i class="fas fa-check"></i>
+							</div>
+						</div>
+					</div>
+
+					<div class="register-content">
+						<form id="form-register">
+							<!-- Primera Parte -->
+							<div class="register-part register-general">
+								<div class="input">
+									<label for="dni">DNI</label>
+									<input type="number" id="dni" placeholder="DNI" />
+								</div>
+
+								<div class="input">
+									<label for="apellido">Apellido</label>
+									<input type="text" id="apellido" placeholder="Apellido" />
+								</div>
+
+								<div class="input">
+									<label for="nombre">Nombre</label>
+									<input type="text" id="nombre" placeholder="Nombre" />
+								</div>
+
+								<div class="input select">
+									<label for="pais"></label>
+									<select name="pais" id="pais">
+										<option value="" selected disabled>
+											Seleccion su País
+										</option>
+										<option value="Argentina">Argentina</option>
+										<option value="Ecuador">Ecuador</option>
+										<option value="Peru">Peru</option>
+									</select>
+								</div>
+
+								<div class="input select">
+									<label for="ciudad"></label>
+
+									<select name="ciudad" id="ciudad">
+										<option value="" selected disabled>
+											Seleccion su Ciudad
+										</option>
+										<option value="Argentina">Lima</option>
+										<option value="Ecuador">Ica</option>
+										<option value="Peru">Amazonas</option>
+									</select>
+								</div>
+
+								<div class="button">
+									<button type="button" id="next-page-2">Siguiente</button>
+								</div>
+							</div>
+							<!-- Primera Parte -->
+
+							<!-- Segunda Parte -->
+							<div class="register-part register-perfil">
+								<div class="input">
+									<label for="telefono">Teléfono</label>
+									<input type="number" id="telefono" placeholder="Teléfono" />
+								</div>
+
+								<div class="input textarea">
+									<label for="perfil">Perfil</label>
+									<textarea
+										name=""
+										id="perfil"
+										placeholder="Describe tu perfil"
+									></textarea>
+								</div>
+
+								<div class="input select">
+									<label for="grado"></label>
+									<select name="grado" id="grado">
+										<option value="" selected disabled>
+											Seleccion su Grado
+										</option>
+										<option value="Argentina">Argentina</option>
+										<option value="Ecuador">Ecuador</option>
+										<option value="Peru">Peru</option>
+									</select>
+								</div>
+
+								<div class="input select">
+									<label for="rubro"></label>
+
+									<select name="rubro" id="rubro">
+										<option value="" selected disabled>
+											Seleccion su Rubro
+										</option>
+										<option value="Argentina">Lima</option>
+										<option value="Ecuador">Ica</option>
+										<option value="Peru">Amazonas</option>
+									</select>
+								</div>
+
+								<div class="button group-button">
+									<button type="button" id="back-page-1">Anterior</button>
+									<button type="button" id="next-page-3">Siguiente</button>
+								</div>
+							</div>
+							<!-- Segunda Parte -->
+
+							<!-- Tercera Parte -->
+							<div class="register-part register-user">
+								<div class="input">
+									<label for="email">Email</label>
+									<input type="email" id="email" placeholder="Email" />
+								</div>
+
+								<div class="input">
+									<label for="username">Username</label>
+									<input type="text" id="username" placeholder="Username" />
+								</div>
+
+								<div class="input password">
+									<label for="password">Contraseña</label>
+									<input
+										type="password"
+										id="password"
+										placeholder="Contraseña"
+									/>
+									<i id="eye" class="fas fa-eye"></i>
+								</div>
+
+								<div class="input file">
+									<label for="foto">Seleccionar Foto</label>
+									<input type="file" name="foto" id="foto" />
+								</div>
+
+								<div class="button group-button">
+									<button type="button" id="back-page-2">Anterior</button>
+									<button id="sendData" type="submit">Terminar</button>
+								</div>
+							</div>
+							<!-- Tercera Parte -->
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="./assets/main.js"></script>
+	</body>
+</html>
